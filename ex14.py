@@ -37,13 +37,15 @@ print "Do you know, where I live or trac me back"
 location = raw_input(prompt)
 
 print "Do you know what meaning I do use"
-machine = raw_input(prompt)
+machine_lang = raw_input(prompt)
 
 print "If you get update, make dua for what you've just learned"
 make_dua = raw_input(prompt)
 
 print """
 Now I know lots of information about you. For example, your name is %r, your location is tracked which is in bansree, capitcal of %r, your machine is %r, and make dua %r
-""" % (username, meaning, machine, make_dua)
+""" % (username, meaning, machine_lang, make_dua)
+
+
 
 
