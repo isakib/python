@@ -11,3 +11,5 @@ print "type the filename again:"
 file_again = raw_input("> ")
 
 txt_again = open(file_again)
+txt_again = open(file_again)
+# try
