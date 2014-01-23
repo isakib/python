@@ -1,14 +1,67 @@
-# here's some new strange stuff, remember type it exactly.
+# from sys import argv
+# 
+# script, input_file = argv
+# 
+# def print_all(f):
+#     print f.read()
+#     
+# def rewind(f):
+#     f.seek(0)
+#     
+# def print_a_line(line_count, f):
+#     print line_count, f.readline()
+# 
+# current_file = open(input_file)
+# 
+# print "first lets print the whole file:\n"
+# 
+# print_all(current_file)
+# 
+# print "now lets rewind, kind of like a tape or reverse it back"
+# 
+# rewind(current_file)
+# 
+# print "lets print three lines:"
+# 
+# current_line = 1
+# print_a_line(current_line, current_file)
+# 
+# current_line = current_line + 1
+# print_a_line(current_line, current_file)
+# 
+# current_line = current_line + 1
+# print_a_line(current_line, current_file)
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+from sys import argv
 
-print "here are the days: ", days
-print "here are the months: ", months
+script, input_file = argv
+# make a function and giving a command f to a file
+def print_all(f):
+    print f.read() # telling to read the file will be given
 
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+def rewind(f): #telling to rewint the file given
+    f.seek(0) 
+    
+def print_a_line(line_count, f): #telling to count the line of the given file
+    print line_count, f.readline() #telling to line count the file
+    
+current_file = open(input_file) #telling to open the file, given while executed the script
+
+print "first let print the whole file:\n" #giving a break
+
+print_all(current_file) #calling the current_file which one we just read, to requesting to print
+
+print "how lets rewind the file like a tape"
+
+rewind(current_file) #requesting to rewint the file, thus we can read with numbers
+
+print "lets print three lines:"
+
+current_line = 1
+print_a_line(current_line, current_file) #we have given current line = 1, so current_line (1) to open current)file input given to read
+
+current_line = current_line + 1 # here we are giving current_line to add 1 to get next (2nd line)
+print_a_line(current_line, current_file)
+
+current_line = current_line + 1 # here we are giving current line_ to read the 3rd line. 
+print_a_line(current_line, current_file)  
