@@ -21,11 +21,12 @@
 # And you have a %r computer, which is truly powerful machine
 # """ % (likes, lives, computer)
 
-
 from sys import argv
 
 script, username = argv
-prompt = '>' # it can be anything or any new input you can give, no harms, just it will show where you have to type.
+prompt = '>' 
+
+# it can be anything or any new input you can give, no harms, just it will show where you have to type.
 
 print "Hello Brother %s, I'm script or you can tell me %s" % (username, script)
 
@@ -44,7 +45,7 @@ make_dua = raw_input(prompt)
 
 print """
 Now I know lots of information about you. For example, your name is %r, your location is tracked which is in bansree, capitcal of %r, your machine is %r, and make dua %r
-""" % (username, meaning, machine_lang, make_dua)
+    """ % (username, meaning, machine_lang, make_dua)
 
 
 

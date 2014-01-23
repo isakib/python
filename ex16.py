@@ -1,14 +1,33 @@
-# here's some new strange stuff, remember type it exactly.
+from sys import argv
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+script, filename = argv
 
-print "here are the days: ", days
-print "here are the months: ", months
+print "we are going to erase %r." % filename # I'm setting string here
+print "if you don't want that, hit CTRIL-C (^C)."
+print "if you do want that, hit RETURN."
 
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+raw_input("?") # raw input or anything I can replace with ?
+
+print "Opening the file...." # just a msg to the users
+target = open(filename, 'w')
+
+print "truncating the file. Goodbye"
+target.truncate()
+
+print "now i'm going to ask you for three lines"
+
+line1 = raw_input("line 1: ")
+line2 = raw_input("line 2: ")
+line3 = raw_input("line 3: ")
+
+print "i'm going to write these to the file"
+
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+
+print "and finally, we close it"
+target.close()

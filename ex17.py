@@ -1,14 +1,21 @@
-# here's some new strange stuff, remember type it exactly.
+# this one is like your scripts with argv
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
-
-print "here are the days: ", days
-print "here are the months: ", months
-
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+def print_two(*args):
+    arg1, arg2 = args
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+    
+#ok, that *args is actully pointless, we can just do this
+    def print_two_again(arg1, arg2):
+        print "args1: %r, arg2: %r" % (arg1, arg2)
+        
+#this just takes one argument
+    def print_one(arg1):
+        print "arg1: %r" % arg1
+#this one takes no arguments
+    def print_none():
+        print "I got nothing'."
+        
+print_two("sakib", "mahmud")
+print_two_again("sakib", "mahmud")
+print_one("first")
+print_none()
