@@ -35,6 +35,7 @@
 from sys import argv
 
 script, input_file = argv
+
 # make a function and giving a command f to a file
 def print_all(f):
     print f.read() # telling to read the file will be given
@@ -43,7 +44,7 @@ def rewind(f): #telling to rewint the file given
     f.seek(0) 
     
 def print_a_line(line_count, f): #telling to count the line of the given file
-    print line_count, f.readline() #telling to line count the file
+    print line_count, f.readline(), #telling to line count the file
     
 current_file = open(input_file) #telling to open the file, given while executed the script
 

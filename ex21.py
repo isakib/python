@@ -1,14 +1,32 @@
-# here's some new strange stuff, remember type it exactly.
+def add(a, b):
+    print "ADDING %d + %d" % (a, b)
+    return a + b
+    
+def subtract(a, b):
+    print "SUBTRACTING %d + %d" % (a, b)
+    return a - b
+    
+def multiply(a, b):
+    print "MULTIPLYING %d + %d" % (a, b)
+    return a * b
+    
+def divide(a, b):
+    print "DIVIDING %d / %d" % (a, b)
+    return a / b
+    
+print "lets do some math with just functios"
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+age = add(30, 5)
+height = subtract(78, 4)
+weight = multiply(90, 2)
+iq = divide(100, 2)
 
-print "here are the days: ", days
-print "here are the months: ", months
+print "age: %d, height: %d, weight: %d, id: %d" % (age, height, weight, iq)
 
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+#a puzzle for extra credit, type it in anyway
+
+print "here is the puzzle"
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+print "that becomes: ", what, "can you do it by hand?"
