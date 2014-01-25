@@ -27,6 +27,8 @@ print "age: %d, height: %d, weight: %d, id: %d" % (age, height, weight, iq)
 
 print "here is the puzzle"
 
-what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+a_number = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
-print "that becomes: ", what, "can you do it by hand?"
+print "that becomes: ", a_number, "can you do it by hand?"
+
+#enjoying it, although in rush
