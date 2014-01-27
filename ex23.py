@@ -1,14 +1,31 @@
-# here's some new strange stuff, remember type it exactly.
+print "lets pratice everything"
+print "you\d' need to know \'bout escapes with \\ that do \n newlines and \t tabs"
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+poem = """
 
-print "here are the days: ", days
-print "here are the months: ", months
-
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
+\tThe lovely world
+with logic so firmly planted
+cannot discern \n the needs of love
+nor comprehend passion from intution
+and requires and explanation
+\n\t\twherethere is none.
 """
+
+print "----------"
+print poem
+print "----------"
+
+five = 10 - 2 + 3 - 6
+print "this should be five: %s" % five
+
+def secret_formula(started):
+    jelly_beans = started * 500
+    jars = jars / 100
+    crates = jars / 100
+    retrn = jelly_beans, jars, crates
+    
+start_point = 10000
+beans, jars, crates, = secret_formula(start_point)
+
+print "with a starting point of: %d" start_point
+print "we have %d beans, %d jars, and %d crates" % secret_formula(start_point)
