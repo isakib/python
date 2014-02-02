@@ -1,14 +1,39 @@
-# here's some new strange stuff, remember type it exactly.
+def break_words(stuff):
+    """this function will break up word for us"""
+    words = stuff.split(' ')
+    return words
+    
+def sort_words(words):
+    """sort the words"""
+    return sorted(words)
+    
+def print_first_word(words):
+    """print the first word after popping it off"""
+    word = words.pop(0)
+    print word
+    
+def print_last_word(words):
+    """prints the last word after popping it off"""
+    word = words.pop(-1)
+    print word
+    
+def sort_sentence(sentence):
+    """takes in a full sentence and returns the sorted word"""
+    words = break_words(sentence)
+    return sort_words(words)
+    
+def print_first_and_last(sentence):
+    """prints the first and last words of the sentence"""
+    words = break_words(sentence)
+    print_first_word(words)
+    print_last_word(words)
+    
+def print_first_and_last_sorted(sentence): # if you replace print with something else,I meant "print word", then you will get error while you will call over this function
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
-
-print "here are the days: ", days
-print "here are the months: ", months
-
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+    """sorted the words then prints the first and last one"""
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)
+    
+    
+    #"patience comes things easy, inshaallah"
