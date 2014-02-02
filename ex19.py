@@ -30,7 +30,7 @@ number_of_questions_and_marks(5,10)
 print "OR, we can use variable from the script:"
 number_questions = 10
 marks_exam = 5
-
+#comments
 number_of_questions_and_marks(number_questions, marks_exam)
 
 print "we can do some total questions and marks calcuation too"
