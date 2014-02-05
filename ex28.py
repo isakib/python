@@ -1,14 +1,35 @@
-# here's some new strange stuff, remember type it exactly.
+people = 20
+cats = 30
+dogs = 15
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+if people < cats:
+    print "too many cats"
 
-print "here are the days: ", days
-print "here are the months: ", months
+if people > cats:
+    print "not too many people, in compare of cats"
+    
+if people < dogs:
+    print "too many dogs"
 
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+if people > dogs:
+   print "ah, funny example"
+    
+dogs += 5
+
+if people >= dogs:
+    print "people are greater that or equal to dogs"
+    
+if people <= dogs:
+    print "people are less then or equal to dogs"
+    
+if people == dogs:
+    print "everyone has 1 dog"
+    
+    
+cats -=10
+
+if people >= cats:
+    print "greater or equal"
+    
+if people <= cats:
+    print "less or equal"

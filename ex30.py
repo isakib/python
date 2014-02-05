@@ -1,14 +1,31 @@
-# here's some new strange stuff, remember type it exactly.
+# a story of dhaka city with huge people, limited bus and too many cards
 
-days = "Mon Tue Wed Thu Fri Sat Sun"
-months = "\nJan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+people = 50
+bus = 10
+car = 40
 
-print "here are the days: ", days
-print "here are the months: ", months
+# you can go through any of it to your home way.
 
-print """
-there is something going on here
-with the three double-quotes
-we'll be able to type as much as like.
-even 4 lines if we want, or 5, or 6.
-"""
+if people > bus: # true
+    print "best to go with bus"
+    
+elif people < bus:
+    print "should not take bus, rather take car"
+    
+else:
+    print "lets decide any one of it"
+    
+if people > car: 
+    print "we can't go with cars"
+    
+elif people < car: #false
+    print "we can go with cards"
+
+else:
+    print "lets decicide any of it"
+    
+if people > bus: #true
+    print " go with bus"
+    
+else:
+    print "fine go home, peace"
