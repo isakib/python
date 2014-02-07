@@ -1,31 +1,26 @@
-# a story of dhaka city with huge people, limited bus and too many cards
+people = 30
+cars = 40
+buses = 15
 
-people = 50
-bus = 10
-car = 40
-
-# you can go through any of it to your home way.
-
-if people > bus: # true
-    print "best to go with bus"
-    
-elif people < bus:
-    print "should not take bus, rather take car"
+if cars > people:
+    print "we should take the cars."
+elif cars < people:
+    print "we should not take the cars."
     
 else:
-    print "lets decide any one of it"
-    
-if people > car: 
-    print "we can't go with cars"
-    
-elif people < car: #false
-    print "we can go with cards"
+    print "we can't decide it now."
 
-else:
-    print "lets decicide any of it"
+if buses > cars: 
+    print "thats too many buses"
     
-if people > bus: #true
-    print " go with bus"
+elif buses < cars:
+    print "maybe we could take the buses"
     
 else:
-    print "fine go home, peace"
+    print "we cant still decidide"
+    
+if people > buses:
+    print "alright, lets just take the buses"
+    
+else:
+    print "fine, lets stay home then"
