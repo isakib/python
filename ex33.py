@@ -1,7 +1,7 @@
 j = 0
 numbers = []
 
-while j < 2233:
+while j < 6:
     print "at the top K is %d" % j
     numbers.append(j)
     

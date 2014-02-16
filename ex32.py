@@ -32,7 +32,6 @@ for i in elements:
 print "-----------------"
 print "-----------------"
 
-
 news = [1, 2, 3, 4, 5]
 people_n = ['hik', 'bik', 'kik', 'tik', 'jik']
 money = [1, 'dollar', 2, 'pounds', 3, 'taka']
