@@ -1,4 +1,4 @@
-j = 0
+j = 3
 numbers = []
 
 while j < 6:
