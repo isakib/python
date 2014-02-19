@@ -1,74 +1,69 @@
 from sys import exit
 
-def gold_room(): # once I will get out from the room of bear, I will get into the Gold room.
-    print "tons of gold inside the room?"
+def gold_room():
+    print "this room is full of gold, how much do you take?"
     
-    next = raw_input("> ")
+    next == raw_input("> ")
     if "0" in next or "1" in next:
         how_much = int(next)
-        
     else:
-        dead("man, learn to type a number") # if no numeric data has input given, it will give this messages
+        msg("man, learn to type number")
         
-    if how_much < 50: # if numeric data given, it compares with 50 and give status you're good or bad guy as I have mentioned to "print"
-        print "Nice, you're good guy" 
+    if how_much < 50:
+        print "Good guy, who got control over desire"
         exit(0)
-    
     else:
-        dead("Bad, control over your desire - even when you got enough")
-
-def bear_room():
-    print "there is a bear here"
-    print "How are you going to deal and get out?"
+        msg("Bad guy, who got no control over desire")
+        
+def left_room():
+    print "you will find a bear"
+    print "how you will skip that bear, without facing bear"
     bear_moved = False
     
     while True:
         next = raw_input("> ")
-        
-        if next == "take honey": #if I call it, the bear will just slap
-            dead("the bear looks at you then slaps off")
-        elif next == "shoot bear" and not bear_moved: #as it is and not the when I Have shoot bear, it will show me way out.
-            print "the bear has moved from the door, you can go"
-            
-            bear_moved = True
-        elif next == "shoot bear" and bear_moved: # if the def bear_room line 23 I made True, then it will be come and print out the 35 line.
-            dead("the bear gets pissed off and chews the leg")
-        elif next == "open door" and bear_moved: #once I have open the door, I will be enter into gold room function called def gold_room()
+        if next == "food":
+            msg("bear will eat you as food")
+        elif next == "shoot bear" and not bear_moved:
+            msg("the bear died, now you can go through")
+        elif next == "shoot bear" and bear_moved:
+            msg("the bear is out of control and get into for attack")
+        elif next == "open door" and bear_moved:
             gold_room()
         else:
-            print "I got no idea what to do"
+            print "What the HECK?"
             
 def right_room():
-    print "there you can see the great evil"
-    print "he, it whatever states at your and you became insane"
-    print "do you flee for your life or eat your head"
-    right_room = False
+    print "Now you're in trouble room"
+    print "How you should skip that situation: Flee?"
     
-    next == raw_input("> ")
+    next = raw_input("> ")
     
-    if next == "flee" and not bear_moved:
-        dead("well that was tasty")
-    elif next == "head" and bear_moved:
-        dead("well that was tasty")
+    if "flee" in next:
+        start()
+    elif "head" in next:
+        msg("well that was delicious")
     else:
-        right_room("No way out, in stuck RIGHT ROOM")
+        right_room()
         
-def dead(why):
-    print why, "good job"
+def msg(why):
+    print why, "Great, job"
     exit(0)
-
+    
 def start():
-    print "Stuck into a room"
-    print "Two options: Left or Right"
-    print "Choose 1 side wisely"
+    print "you are in dark room"
+    print "take left/right side?"
     
     next = raw_input("> ")
     
     if next == "left":
-        bear_room()
+        left_room()
     elif next == "right":
         right_room()
     else:
-        dead("You're Finished, Man") #if I don't give or call properly, I will be ended here.
-        
-start()
+        msg("You're in danger") 
+    
+start()       
+
+
+        #fails
