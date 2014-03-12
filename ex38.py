@@ -1,18 +1,17 @@
-ten_things = "apple organces crows telephone light sugar"
+ten_things = "Sakib Akib Anika Naima Sami Samia"
 
-print "wait there is not 10 things in that list, let's fix that"
+print "wait there's not 10 things in that list, let's fix that"
 
 stuff = ten_things.split(' ')
 more_stuff = ["Day", "Night", "Song", "Frisbee", "Corn", "Banana", "Girl", "Boy"]
 
-while len(stuff)  != 11:
+while len(stuff) != 10:
     next_one = more_stuff.pop()
-    print "adding: ", next_one
+    print("Adding:", next_one)
     stuff.append(next_one)
+    print("there's %d items now") % len(stuff)
 
-    print "there is %d items now" % len(stuff)
-
-print "there we go: ", stuff
+print "there we go:", stuff
 
 print "lets do some things with stuff"
 
@@ -20,4 +19,4 @@ print stuff[1]
 print stuff[-1]
 print stuff.pop()
 print ' '.join(stuff)
-print ' '.join(stuff[3:5])
+print ' '.join(stuff[3.5])

@@ -3,23 +3,29 @@ class Talk(object):
     def __init__(self, speech):
         self.speech = speech
 
-    def teach_me_speech(self):
+    def talk_to_me(self):
         for line in self.speech:
             print line
 
-print "DAY ONE:"
-print "--" * 10
+talk_one = Talk(["Express gratitude before speech",
+                 "Make dua before starts"])
 
+talk_two = Talk(["Put efforts to understand is saying",
+                 "Communcation matters for the leaders"])
 
-day_one = Talk(["Say As Salam",
-                "Say How Are You Brother",
-                "Say Sounds Good"])
+talk_one.talk_to_me()
+talk_two.talk_to_me()
 
-day_two = Talk(["Second Day:"
-                "Say Waalikumus Salam",
-                "Alhamdulliah, I'm fine"])
+class Voice(object):
 
-day_one.teach_me_speech()
+    def __init__(self, voice):
+        self.voice = voice
 
+    def voice_over_me(self):
+        for line in self.voice:
+            print line
 
-day_two.teach_me_speech()
+voice_one = Voice(["Echo Voice and repeated voice",
+                 "ends with it and repeats to starts"])
+
+voice_one.voice_over_me()
